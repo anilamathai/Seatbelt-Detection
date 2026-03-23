@@ -1,0 +1,17 @@
+model:
+  name: mobilenet_v2
+  pretrained: true
+  num_classes: 3
+
+training:
+  image_size: 224
+  batch_size: 32
+  epochs: 25
+  learning_rate: 0.0003
+
+inference:
+  confidence_threshold: 0.6
+
+paths:
+  data_dir: data
+  checkpoint_dir: checkpoints
